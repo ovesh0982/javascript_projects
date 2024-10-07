@@ -15,9 +15,9 @@
 .todo-app {
   width: 100%;
   max-width: 540px;
-  background: #fff;
+  /* background: #fff; */
   margin: 100px auto 20px;
-  padding: 40px 30px 70px;
+  /* paddinsg: 40px 30px 70px; */
   border-radius: 10px;
 }
 
@@ -62,4 +62,31 @@ button {
   font-size: 16px;
   cursor: pointer;
   border-radius: 40px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 34%;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(./pngwing.com.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 32%;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
 }
